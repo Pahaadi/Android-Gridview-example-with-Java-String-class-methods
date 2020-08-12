@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_margin="5dp">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#afaeae"
+        android:layout_margin="4dp"
+        />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/l_code">
+            <TextView
+                android:id="@+id/head_code"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Function - "
+                android:textSize="16sp"
+                android:textStyle="bold"
+                />
+            <TextView
+                android:id="@+id/txt_java_code"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                tools:text="Java Code"
+                android:layout_toRightOf="@+id/head_code"
+                android:textSize="16sp"/>
+        </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/l_op"
+        android:layout_below="@+id/l_code">
+        <TextView
+            android:id="@+id/head_op"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Output - "
+            android:textSize="16sp"
+            android:textStyle="bold"
+
+            />
+
+        <TextView
+            android:id="@+id/txt_output"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@+id/head_op"
+            android:textSize="14sp"
+            tools:text="output" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/l_exp"
+        android:layout_below="@+id/l_op">
+        <TextView
+            android:id="@+id/head_exp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Explanation - "
+            android:textSize="14sp"
+            android:textStyle="bold" />
+        <TextView
+            android:id="@+id/txt_explanation"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            tools:text="explanation"
+            android:textSize="12sp"
+            android:maxLines="15"
+            android:layout_below="@id/head_exp"/>
+    </RelativeLayout>
+    </RelativeLayout>
+</LinearLayout>
